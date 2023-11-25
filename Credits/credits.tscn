@@ -1,0 +1,111 @@
+[gd_scene load_steps=7 format=3 uid="uid://ewwgpmi6yprf"]
+
+[ext_resource type="Script" path="res://Credits/credits.gd" id="1_bldd6"]
+[ext_resource type="Texture2D" uid="uid://cicurykbddpk1" path="res://Menu/logo (1).png" id="1_xcl2i"]
+[ext_resource type="Texture2D" uid="uid://dmiqhfr7jay6l" path="res://Credits/42-KL-BLACK-LOGO.png" id="2_wp1ra"]
+[ext_resource type="Texture2D" uid="uid://c7qx3iv1py55t" path="res://Credits/logo_vertical_color_dark.png" id="3_toj74"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4615u"]
+size = Vector2(494.25, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkemr"]
+size = Vector2(1102.5, 406)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bldd6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(271.875, 91)
+shape = SubResource("RectangleShape2D_4615u")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D"]
+position = Vector2(314, 148)
+scale = Vector2(0.413514, 0.511538)
+
+[node name="Logo(1)" type="Sprite2D" parent="Area2D/CollisionShape2D/Sprite2D"]
+position = Vector2(-1034.73, -283.459)
+scale = Vector2(0.970588, 0.906015)
+texture = ExtResource("1_xcl2i")
+
+[node name="Label" type="Label" parent="Area2D/CollisionShape2D"]
+offset_left = 41.125
+offset_top = -35.0
+offset_right = 240.125
+offset_bottom = 37.0
+theme_override_font_sizes/font_size = 50
+text = "Credits"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(574.75, 374)
+shape = SubResource("RectangleShape2D_vkemr")
+
+[node name="Label" type="Label" parent="Area2D/CollisionShape2D2"]
+offset_left = -531.75
+offset_top = -189.0
+offset_right = -380.75
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 24
+text = "TEAM NAME:
+
+TEAM MEMBER:
+
+
+
+
+EVENT NAME:"
+
+[node name="Label2" type="Label" parent="Area2D/CollisionShape2D2"]
+offset_left = -343.75
+offset_top = -189.0
+offset_right = -32.75
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 24
+text = "PB&JAM
+
+LEE YANG | YALEE
+IVAN TEOH | JTEOH
+CHIA YU XIANG | CYU-XIAN
+ETHAN YAP | YYEAN-WA
+
+42 GAME JAM"
+
+[node name="Label3" type="Label" parent="Area2D/CollisionShape2D2"]
+offset_left = 17.25
+offset_top = -183.0
+offset_right = 328.25
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 24
+text = "EVENT ORGANIZER:
+
+
+
+        GAME ENGINE:
+
+
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D2"]
+
+[node name="42-kl-black-logo" type="Sprite2D" parent="Area2D/CollisionShape2D2/Sprite2D"]
+position = Vector2(397.25, -145)
+scale = Vector2(0.0511988, 0.0549777)
+texture = ExtResource("2_wp1ra")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Area2D/CollisionShape2D2"]
+
+[node name="LogoVerticalColorDark" type="Sprite2D" parent="Area2D/CollisionShape2D2/Sprite2D2"]
+position = Vector2(331.25, 34)
+scale = Vector2(0.15918, 0.146883)
+texture = ExtResource("3_toj74")
+
+[node name="TitleButton" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 589.0
+offset_right = 650.0
+offset_bottom = 637.0
+theme_override_font_sizes/font_size = 20
+text = "BACK TO TITLE"
+
+[connection signal="pressed" from="TitleButton" to="." method="_on_title_button_pressed"]

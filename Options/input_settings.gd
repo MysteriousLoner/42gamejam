@@ -79,11 +79,7 @@ func _update_action_list(button, event):
 
 func _on_reset_button_pressed():
 	_create_action_list()
-	
-	
-func _on_back_button_pressed():
-	pass # Replace with function body.
-	
+
 
 func _on_title_button_pressed():
 	get_tree().change_scene_to_file("res://Menu/menu.tscn")
