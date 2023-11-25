@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6ctqxly158os"]
+
+[ext_resource type="Texture2D" uid="uid://bnxgeqllk1y4l" path="res://graphic_assets/flowing_leaves.png" id="1_8wjfd"]
+[ext_resource type="Script" path="res://scene/flowing_leaves.gd" id="1_bqt2h"]
+
+[node name="FlowingLeaves" type="ParallaxBackground"]
+script = ExtResource("1_bqt2h")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 648)
+
+[node name="FlowingLeaves" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(288.5, 159.5)
+rotation = -3.14159
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
+
+[node name="FlowingLeaves2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(864, 160)
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
+
+[node name="FlowingLeaves3" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(288, 488)
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
+
+[node name="FlowingLeaves4" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(864, 488)
+rotation = -3.14159
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
+
+[node name="FlowingLeaves5" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1440, 160)
+rotation = -3.14159
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
+
+[node name="FlowingLeaves6" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1440, 480)
+scale = Vector2(1.4974, 1.48611)
+texture = ExtResource("1_8wjfd")
