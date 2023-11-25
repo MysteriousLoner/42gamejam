@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ewwgpmi6yprf"]
+[gd_scene load_steps=8 format=3 uid="uid://ewwgpmi6yprf"]
 
 [ext_resource type="Script" path="res://Credits/credits.gd" id="1_bldd6"]
 [ext_resource type="Texture2D" uid="uid://cicurykbddpk1" path="res://Menu/logo (1).png" id="1_xcl2i"]
-[ext_resource type="Texture2D" uid="uid://dmiqhfr7jay6l" path="res://Credits/42-KL-BLACK-LOGO.png" id="2_wp1ra"]
+[ext_resource type="FontFile" uid="uid://bsf6n6q2dkxpx" path="res://videotype.otf" id="3_cmger"]
 [ext_resource type="Texture2D" uid="uid://c7qx3iv1py55t" path="res://Credits/logo_vertical_color_dark.png" id="3_toj74"]
+[ext_resource type="Texture2D" uid="uid://bixvec23cbvhe" path="res://Credits/42-KL-logo-white_1_50-e1640603992973.png" id="4_twirg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4615u"]
 size = Vector2(494.25, 129)
@@ -15,6 +16,19 @@ size = Vector2(1102.5, 406)
 script = ExtResource("1_bldd6")
 
 [node name="Area2D" type="Area2D" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="Area2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -20.0
+offset_right = 1168.0
+offset_bottom = 667.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(271.875, 91)
@@ -34,11 +48,12 @@ offset_left = 41.125
 offset_top = -35.0
 offset_right = 240.125
 offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("3_cmger")
 theme_override_font_sizes/font_size = 50
 text = "Credits"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(574.75, 374)
+position = Vector2(575.75, 374)
 shape = SubResource("RectangleShape2D_vkemr")
 
 [node name="Label" type="Label" parent="Area2D/CollisionShape2D2"]
@@ -46,6 +61,7 @@ offset_left = -531.75
 offset_top = -189.0
 offset_right = -380.75
 offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("3_cmger")
 theme_override_font_sizes/font_size = 24
 text = "TEAM NAME:
 
@@ -61,6 +77,7 @@ offset_left = -343.75
 offset_top = -189.0
 offset_right = -32.75
 offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("3_cmger")
 theme_override_font_sizes/font_size = 24
 text = "PB&JAM
 
@@ -72,40 +89,41 @@ ETHAN YAP | YYEAN-WA
 42 GAME JAM"
 
 [node name="Label3" type="Label" parent="Area2D/CollisionShape2D2"]
-offset_left = 17.25
-offset_top = -183.0
-offset_right = 328.25
-offset_bottom = 113.0
+offset_left = -23.75
+offset_top = -184.0
+offset_right = 287.25
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("3_cmger")
 theme_override_font_sizes/font_size = 24
 text = "EVENT ORGANIZER:
 
 
 
-        GAME ENGINE:
+      GAME ENGINE:
 
 
 "
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D2"]
 
-[node name="42-kl-black-logo" type="Sprite2D" parent="Area2D/CollisionShape2D2/Sprite2D"]
-position = Vector2(397.25, -145)
-scale = Vector2(0.0511988, 0.0549777)
-texture = ExtResource("2_wp1ra")
+[node name="42-kl-logo-white150-e1640603992973" type="Sprite2D" parent="Area2D/CollisionShape2D2/Sprite2D"]
+position = Vector2(380.25, -145)
+texture = ExtResource("4_twirg")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Area2D/CollisionShape2D2"]
 
 [node name="LogoVerticalColorDark" type="Sprite2D" parent="Area2D/CollisionShape2D2/Sprite2D2"]
-position = Vector2(331.25, 34)
+position = Vector2(305.25, 22)
 scale = Vector2(0.15918, 0.146883)
 texture = ExtResource("3_toj74")
 
 [node name="TitleButton" type="Button" parent="."]
 offset_left = 472.0
-offset_top = 589.0
-offset_right = 650.0
-offset_bottom = 637.0
-theme_override_font_sizes/font_size = 20
+offset_top = 581.0
+offset_right = 682.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("3_cmger")
+theme_override_font_sizes/font_size = 25
 text = "BACK TO TITLE"
 
 [connection signal="pressed" from="TitleButton" to="." method="_on_title_button_pressed"]

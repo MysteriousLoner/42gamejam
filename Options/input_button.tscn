@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://v0upf6j6hmma"]
+[gd_scene load_steps=5 format=3 uid="uid://v0upf6j6hmma"]
+
+[ext_resource type="FontFile" uid="uid://bsf6n6q2dkxpx" path="res://videotype.otf" id="1_xi26b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ok57"]
 bg_color = Color(0, 0, 0, 1)
@@ -9,7 +11,7 @@ bg_color = Color(1, 1, 1, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mkgo"]
 
 [node name="InputButton" type="Button"]
-custom_minimum_size = Vector2(0, 18)
+custom_minimum_size = Vector2(0, 30)
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
@@ -37,6 +39,8 @@ layout_mode = 2
 [node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_fonts/font = ExtResource("1_xi26b")
+theme_override_font_sizes/font_size = 18
 text = "Action Name"
 vertical_alignment = 1
 
@@ -48,5 +52,7 @@ mouse_filter = 1
 [node name="LabelInput" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_fonts/font = ExtResource("1_xi26b")
+theme_override_font_sizes/font_size = 18
 text = "Input Key"
 vertical_alignment = 1

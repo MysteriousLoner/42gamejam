@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddgw71fh3xfcl"]
+[gd_scene load_steps=5 format=3 uid="uid://ddgw71fh3xfcl"]
 
 [ext_resource type="Script" path="res://Menu/Menu.gd" id="1_1xex3"]
 [ext_resource type="Texture2D" uid="uid://cicurykbddpk1" path="res://Menu/logo (1).png" id="2_08cix"]
+[ext_resource type="FontFile" uid="uid://bsf6n6q2dkxpx" path="res://videotype.otf" id="2_pe6e7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qnuu7"]
 size = Vector2(341, 189)
@@ -34,18 +35,22 @@ layout_mode = 2
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pe6e7")
 text = "Play"
 
 [node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pe6e7")
 text = "Options"
 
 [node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pe6e7")
 text = "Credits"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_pe6e7")
 text = "Quit"
 
 [node name="Node2D" type="Node2D" parent="."]
