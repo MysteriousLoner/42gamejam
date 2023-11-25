@@ -16,6 +16,7 @@ var input_actions = {
 	"Right": "Move Right",
 	"Jump": "Jump",
 	"Interact": "Interact",
+	"Options": "Options Menu",
 }
 
 

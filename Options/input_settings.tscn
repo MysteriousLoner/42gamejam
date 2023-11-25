@@ -76,6 +76,12 @@ custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 
+[node name="InputButton7" parent="PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/ActionList" instance=ExtResource("2_4j1m2")]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_force_pass_scroll_events = false
+theme_override_font_sizes/font_size = 24
+
 [node name="ResetButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
@@ -86,7 +92,7 @@ text = "Reset All The Key To Default"
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_w54ij")
-text = "BACK TO TITLE"
+text = "BACK"
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/TitleButton" to="." method="_on_title_button_pressed"]

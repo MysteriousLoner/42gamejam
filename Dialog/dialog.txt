@@ -1,0 +1,142 @@
+HEY NIGGA HERE IS THE DIALOG SESSION FOR THE GAME MADE BY TEAM PB&JAM
+
+-----------------------------------------------------------------------
+								 KAVERN
+-----------------------------------------------------------------------
+
+#Press start
+#Scene cuts to Kyle and Nathan in the cave talking:
+
+Kyle: How long has it been?
+Nathan: Coming up on 40 minutes, soon to be our longest duo expedition yet.
+Nathan: Yo! what’s that?
+Kyle: That’s the void that’s what that is.
+
+-----------------------------------------------------------------------
+
+#Nathan throws a pebble down the hole:
+
+Nathan: 2 seconds… It’s not that deep.
+Kyle: Yet we can’t see the bottom...
+Nathan: I’ll secure the rope, go check what’s down there.
+Kyle: Already on it.
+
+-----------------------------------------------------------------------
+
+#Scene cuts to Kyle climbing down the rope:
+
+Kyle: How long has it been?
+Nathan: 10 minutes.
+Kyle: I don’t think I’m making any progress.
+Nathan: Something isn’t right, get back up here.
+Kyle: Don’t have to tell me twice.
+
+-----------------------------------------------------------------------
+
+#Scene Fades to black and back:
+
+Nathan: What’s taking so long?! Hurry up!
+Kyle: *It’s been so long yet I don’t feel tired at all*
+Nathan: Kyle!
+Nathan: Hey Kyle!!
+
+-----------------------------------------------------------------------
+
+#Scene cuts to black:
+
+Kyle: !?
+
+-----------------------------------------------------------------------
+
+#Scene dimly lights back up:
+
+Kyle: Where.. am I..?
+Kyle: The hole... It’s gone..
+Kyle: Nathan too...
+Kyle: This place gives me the creeps.
+
+-----------------------------------------------------------------------
+
+#After taking a few steps forward:
+
+Kyle: Got to find a way out of here.
+
+-----------------------------------------------------------------------
+
+**Every stage fades in from black, if possible, eyes and light sources are always visible
+**First level to get used to the platforming mechanics of the game.
+
+-----------------------------------------------------------------------
+
+#Picks up a gem as a light source:
+
+Kyle: Should to be enough to light the way.
+
+-----------------------------------------------------------------------
+
+#Next room has floating rocks (?)
+
+Kyle: This is messed up..
+
+-----------------------------------------------------------------------
+
+#As the player approaches the edge, switch gravity.
+
+Kyle: WHAT !?
+
+-----------------------------------------------------------------------
+
+*Popup appears teaching the player that pressing (jump_bind) again after jumping switches gravity.
+*Next level, slightly harder room to get used to gravity manipulation.
+
+-----------------------------------------------------------------------
+
+#Next level, light from the gem fades out.
+
+Kyle: Crystal fizzled out, gonna need a new one.
+
+-----------------------------------------------------------------------
+
+#Picks up a pickaxe.
+
+Kyle: I’ll be borrowing this.
+
+-----------------------------------------------------------------------
+
+##Popup appears teaching the player that holding (interact) next to a crystal will harvest it, however the crystal will break and no longer emit light.
+##Notify the player that from now on it is possible to soft lock stages. If it occurs, the stage will reset.
+##Next level, slightly harder room to get used to light management.
+*Runic doors both activated and deactivated appear, but the player doesn’t know their importance.
+**Small intersecting room, leading to the next level and on the floor a passageway blocked by a wall with runes on it.
+#Next level, player breaks crystal for light, runic door next to it moves.
+##Popup appears teaching the player that walls with runic symbols on them are affected by the light from the crystal geodes, their small light source is not enough to activate them.
+#Harder room to get used to runic wall management.
+
+-----------------------------------------------------------------------
+
+#appears back at the small intersecting room, from where the player entered the previous level.
+
+Kyle: Wasn’t I here just a while ago..?
+
+-----------------------------------------------------------------------
+
+#runic door on the ground with a crystal geode next to it, the player also now receives the prompt to interact with the geode.
+
+#runic door deactivates and the player drops down into the final boss level.
+#final level of the demo.
+#camera pans ahead of the stage.
+
+Kyle: That looks like a way out!
+
+##hard level intended to test the player on all the mechanics learnt in the demo.
+
+-----------------------------------------------------------------------
+
+#player clears the boss level.
+
+Kyle: This tunnel... It’s just like that hole, never ending.
+Kyle: Will I ever get out of here... Nathan must be worried.
+
+#scene fades to darkness as only 2 pairs of eyes remain visible.
+#fully fades to black and display thanks for playing.
+#return to title screen.

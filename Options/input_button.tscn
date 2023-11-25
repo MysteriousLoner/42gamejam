@@ -8,7 +8,7 @@ bg_color = Color(0, 0, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2yvr3"]
 bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mkgo"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lyq05"]
 
 [node name="InputButton" type="Button"]
 custom_minimum_size = Vector2(0, 30)
@@ -19,7 +19,7 @@ focus_mode = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_6ok57")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2yvr3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2yvr3")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_7mkgo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lyq05")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
