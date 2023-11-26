@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://ddgw71fh3xfcl"]
 
 [ext_resource type="Script" path="res://Menu/Menu.gd" id="1_1xex3"]
-[ext_resource type="Texture2D" uid="uid://cicurykbddpk1" path="res://Menu/logo (1).png" id="2_08cix"]
 [ext_resource type="FontFile" uid="uid://bsf6n6q2dkxpx" path="res://videotype.otf" id="2_pe6e7"]
+[ext_resource type="Texture2D" uid="uid://ck0rqpoj67" path="res://Menu/Logo (2).png" id="3_2r2ux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qnuu7"]
 size = Vector2(341, 189)
@@ -63,12 +63,9 @@ position = Vector2(577, 163)
 shape = SubResource("RectangleShape2D_qnuu7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Area2D/CollisionShape2D"]
-position = Vector2(2.5, 3.5)
-
-[node name="Logo(1)" type="Sprite2D" parent="Node2D/Area2D/CollisionShape2D/Sprite2D"]
-position = Vector2(-7, -2)
-scale = Vector2(0.573424, 0.601923)
-texture = ExtResource("2_08cix")
+position = Vector2(-9, 4)
+scale = Vector2(0.614414, 0.639423)
+texture = ExtResource("3_2r2ux")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
